@@ -98,7 +98,7 @@ Follows the same format as returned by REST API endpoints
     firstFillTime: number, // Millisecond since Epoch
     lastFillTime: number, // Millisecond since Epoch
     fills: { 
-      seqNumber: number, // Millisecond since Epoch
+      seqNumber: number, // seqNumber of orderStatus
       timestamp: number, // Millisecond since Epoch
       qty: number,
       price: number,
