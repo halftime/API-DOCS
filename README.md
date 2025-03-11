@@ -122,7 +122,7 @@ Follows the same format as the `walletHistory` entries in the REST API, addition
     label: string,
     userId: string,
     description: string,
-    amount: number,
+    amount: number, // +- net available balance (amount) change
     JSONdata: { 
       // Contains data that is specific to the transaction, 
       // e.g. the references for deposit/withdraw operations, 
@@ -132,7 +132,7 @@ Follows the same format as the `walletHistory` entries in the REST API, addition
       notes: string, 
     },
     timestamp: string, // ISODate
-    balance: number
+    balance: number // new available balance
   } 
 }
 ```
