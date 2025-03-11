@@ -202,11 +202,11 @@ Please see `examples/book-checksum-test.js` for a fully functioning example.
 ```
 
 ### Tick message
-It's received for all pairs, always. Every tick also includes the most current **ask** and **bid**.
+It's received for all pairs, always. Every tick also includes the most current **ask** (price) and **bid** (price).
 
-example
+json tick example:
 ```
-"{\"tick\":{\"pair\":\"LTCUSD\",\"timestamp\":1741713705386,\"price\":90.7946911729969,\"qty\":1e-12,\"ask\":90.98315564513774,\"bid\":90.60665488320122}}"
+{"tick":{"pair":"LTCUSD","timestamp":1741713705386,"price":90.7946911729969,"qty":1e-12,"ask":90.98315564513774,"bid":90.60665488320122}}
 ```
 
 ```
@@ -214,7 +214,7 @@ example
   tick: {
     pair: string,
     price: number,
-    qty: number,
+    qty: number, // ?
     timestamp: number, // Milliseconds since Epoch
     // tick has no seqNumber
     ask: number,
